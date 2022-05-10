@@ -1,0 +1,12 @@
+StudentId,FirstName,LastName,NumberOfClasses,NumberOfElectives,isEnglishLearner,isFreeAndReduced
+100027,Tony,Stark,6,1,0,1
+100032,Bruce,Banner,6,2,1,0
+100037,Thor,SonOfOdin,6,4,1,0
+100042,Phil,Coulson,6,2,1,1
+100047,Clint,Barton,6,3,0,1
+100052,Pepper,Potts,6,5,1,1
+100057,Jar,Vis,6,6,0,0
+100062,Nick,Fury,6,0,1,1
+100067,Peter,Parker,7,0,0,1
+100072,Stan,Lee,3,2,0,1
+100072,Clint,Barton,5,3,1,0

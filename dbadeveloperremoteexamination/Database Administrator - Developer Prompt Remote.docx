@@ -1,0 +1,37 @@
+Database Administrator – Developer Examination Prompt - Remote
+
+Remote Exam Instructions – The majority of this examination is done using the programming language of choice by the applicant, though this exam does include Microsoft SQL exercises. To complete those exercises it is recommended that the applicant use any SQL IDE (SQL Server Management Studio recommended) to help with syntax and to see the results of their queries.
+Introduction – Congratulations for progressing this far in the Database Administrator – Developer hiring process. The following prompt will guide you through the practical examination portion of the process. There are two (2) programming exercises and one (1) SQL exercise to complete.
+Scoring - Each exercise will be scored individually from the others and no exercise will have any impact on the scoring for any other exercise. Each exercise will be given a score in the following areas: syntax (10 %), methodology (40%), and functionality (50%).
+Due to the nature of the scoring, it is recommended that applicants explain how they would approach a solution even if they are unable to implement said solution. In other words, if the applicant cannot provide a functional solution to the exercise, they should complete as much of the exercise as possible, also providing reasoning to the portions they could not complete.
+
+Programming Exercises (Programming Language of Choice; JavaScript Preferred) –
+
+Exercise 1 (35%) –  Using the StudentData.csv file provided, create a script that does the following
+Import the file to be used in your script.
+Write a method to modify each row in the following manner
+Add a “hasMajorityElective” boolean column (property) to each row object and set this to true if the student has 50% or more elective classes.
+Add a “isELandFRE” Boolean column(property) to each row object and set this to true of the student is both and English Learner and Free and Reduced student.
+Sort the row objects by Last Name (A-Z), First Name (A-Z), and Number of Classes (0-7)
+Export the modified, sorted data to the Exam Materials Folder in a CSV file titled {Your First Initial}_{Your Last Name}_Ex1Results.csv
+Save the script you wrote in the Exam Materials Folder in a file titled {Your First Initial}_{Your Last Name}_Ex1Script
+
+Exercise 2 (15%) – You are going to be executing HTTP requests to a web server to show your knowledge of doing so. We have provided the API Documentation that you will be working with. Write a script that does the following:
+Write a method to make an HTTP GET Request to retrieve all the Poll Questions using the route provided in the API documentation
+Output your results to verify correct functionality. This should match the response given in the API documentation
+Write a method to make an HTTP POST request to insert a new Poll Question into the questions collection.
+Output your results to verify correct functionality. This should match the response given in the API documentation.
+
+NOTE – Response from Mock Server will be the same regardless of what you send up.
+EXTRA CREDIT – Separate your HTTP Request implementation into its own parameterized method for code re-use and efficiency. Alter your other methods to use this new method.
+EXTRA, EXTRA CREDIT – In all requests, include the header for an MUSD Security Certificate with name MUSD-CERT with value a7xffglmnop
+Save the script you wrote in the Exam Materials Folder in a file titled {Your First Initial}_{Your Last Name}_Ex2Script
+
+SQL Exercises (Programming Language: SQL) –
+
+Exercise 1(50%) –  Open the file SQLDeveloperTest.sql and follow the directions in there to complete this exercise
+SERVER NAME – mdoapi01.madera.k12.ca.us
+Authentication Type – SQL Server Authentication
+Username – DeveloperTest
+Pass -- test
+DatabaseName – DeveloperTest
