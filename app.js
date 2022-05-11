@@ -48,10 +48,45 @@ let originalData
     } else {
       studentObjects[i].isELandFRE = false;
     }
-
   }
-  console.log(studentObjects)
 
+  //Sort the row objects by Last Name (A-Z), First Name (A-Z), and Number of Classes (0-7)
+  const lastNameSort = studentObjects.sort((a,b) => a.LastName.localeCompare(b.LastName))
+  const firstNameSort = studentObjects.sort((a,b) => a.FirstName.localeCompare(b.FirstName))
+  const numberOfClassesSort = studentObjects.sort(compareClasses)
+
+  console.log(studentObjects)
 })();
 
 
+function compareLastName( a, b ) {
+  if ( a.LastName.toLowerCase() < b.LastName.toLowerCase()){
+    return -1;
+  }
+  if ( a.LastName.toLowerCase() > b.LastName.toLowerCase()){
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+function compareFirstName( a, b ) {
+  if ( a.FirstName.toLowerCase() < b.FirstName.toLowerCase()){
+    return -1;
+  }
+  if ( a.FirstName.toLowerCase() > b.FirstName.toLowerCase()){
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+function compareClasses( a, b ) {
+  if (Number(a.NumberOfClasses) < Number(b.NumberOfClasses)) {
+    return -1;
+  } else if (Number(a.NumberOfClasses) > Number(b.NumberOfClasses)) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
