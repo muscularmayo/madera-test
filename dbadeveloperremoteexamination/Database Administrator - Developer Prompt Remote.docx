@@ -11,6 +11,7 @@ Exercise 1 (35%) –  Using the StudentData.csv file provided, create a script t
 Import the file to be used in your script.
 Write a method to modify each row in the following manner
 Add a “hasMajorityElective” boolean column (property) to each row object and set this to true if the student has 50% or more elective classes.
+
 Add a “isELandFRE” Boolean column(property) to each row object and set this to true of the student is both and English Learner and Free and Reduced student.
 Sort the row objects by Last Name (A-Z), First Name (A-Z), and Number of Classes (0-7)
 Export the modified, sorted data to the Exam Materials Folder in a CSV file titled {Your First Initial}_{Your Last Name}_Ex1Results.csv
