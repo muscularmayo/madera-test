@@ -3,21 +3,19 @@ const fsp = require("fs").promises
 
 let originalData
 
-fs.readFile('./dbadeveloperremoteexamination/StudentData.csv', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  // console.log(data)
-  originalData = data;
-});
+// fs.readFile('./dbadeveloperremoteexamination/StudentData.csv', 'utf8', (err, data) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   console.log(data)
 
-let promiseData
+// }); we do not like callback hell
+
 
 (async function() {
-  promiseData = await fsp.readFile('./dbadeveloperremoteexamination/StudentData.csv', 'utf8')
+  const promiseData = await fsp.readFile('./dbadeveloperremoteexamination/StudentData.csv', 'utf8')
   console.log(promiseData)
 })();
 
-console.log(promiseData)
 
