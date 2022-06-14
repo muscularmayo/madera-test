@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fsp = require("fs").promises
+const fsp = fs.promises
 
 let originalData
 
@@ -90,3 +90,5 @@ function compareClasses( a, b ) {
     return 0;
   }
 }
+
+console.log('original data', originalData)

@@ -18,7 +18,8 @@ Sort the row objects by Last Name (A-Z), First Name (A-Z), and Number of Classes
 Export the modified, sorted data to the Exam Materials Folder in a CSV file titled {Your First Initial}_{Your Last Name}_Ex1Results.csv
 Save the script you wrote in the Exam Materials Folder in a file titled {Your First Initial}_{Your Last Name}_Ex1Script
 
-Exercise 2 (15%) – You are going to be executing HTTP requests to a web server to show your knowledge of doing so. We have provided the API Documentation that you will be working with. Write a script that does the following:
+Exercise 2 (15%) – You are going to be executing HTTP requests to a web server to show your knowledge of doing so. 
+We have provided the API Documentation that you will be working with. Write a script that does the following:
 Write a method to make an HTTP GET Request to retrieve all the Poll Questions using the route provided in the API documentation
 Output your results to verify correct functionality. This should match the response given in the API documentation
 Write a method to make an HTTP POST request to insert a new Poll Question into the questions collection.
